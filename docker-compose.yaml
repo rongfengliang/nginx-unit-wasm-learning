@@ -1,0 +1,9 @@
+version: "3"
+services:
+  app:
+     image: unit:1.31.1-wasm
+     ports:
+       - 8080:8080
+       - 8000:8000
+     volumes:
+       - ./app:/www
